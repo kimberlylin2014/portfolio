@@ -1,0 +1,195 @@
+/* projects  */
+#projects-section {
+    padding-top: 50px;
+    background-color: #222831;
+}
+#projects-section {
+    padding-bottom: 40px;
+}
+#projects-section .my-projects-header{
+    /* color: #323232; */
+    color: #FFFAFA;
+} 
+
+/* youtube play button */
+#projects-section .play-btn {
+    width: 80px;
+    height: 80px;
+    opacity: 0.85;
+    transition: transform .5s ease;
+    background-color: #FFFAFA;
+    border-radius: 50%;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.1); 
+}
+#projects-section .play-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+#projects-section .youtube-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 280px;
+}
+#projects-section .project-title {
+    padding: 5px 0 5px 0;
+    color: #FFFAFA!important;
+}
+#projects-section .git-section {
+    width: 70%;
+    margin: 0 auto;
+}
+#projects-section .git-section a {
+    color: #FFFAFA!important;
+    font-size: 15px;
+    margin: 15px 0 10px 10px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+#projects-section .git-section a:hover {
+    text-shadow: none;
+    color: rgb(215, 204, 204)!important;
+
+    text-decoration: none;
+}
+#projects-section .git-img {
+    width: 38px;
+    margin-top: 10px;
+}
+#projects-section .git-img {
+    margin-top: 5px;
+    width : 30px;
+    background-color: #FFFAFA;
+    border-radius: 50%;
+    border: 1px solid #FFFAFA;    
+}
+#projects-section .demo-details {
+    width: 100%;
+    color:#323232;
+}
+#projects-section .demo-details .card-body {
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+#projects-section .demo-details ul {
+    padding-left: 18px;
+}
+@media (min-width: 350px) {
+    #projects-section .git-section {
+        width: 60%;
+    }
+}
+@media (min-width: 450px) {
+    #projects-section .git-section {
+        width: 53%;
+    }
+    #projects-section .git-section a {
+        font-size: 18px;
+    }
+    #projects-section .git-img {
+        width : 35px;
+    }
+}
+@media (min-width: 500px) {
+    #projects-section .git-section {
+        width: 48%;
+    }
+}
+@media (min-width: 768px) {
+    #projects-section .git-section {
+        width: 35%;
+    }
+    #projects-section .youtube-img {
+        height: 220px;
+        width: 400px;
+    }
+    #projects-section .git-img {
+        margin-top: 10px;
+    }
+    #intro {
+        margin-top: 75px;
+    }
+}
+@media (min-width: 992px) {
+    #projects-section .git-section {
+        width: 55%;
+    }
+    #projects-section .my-projects-header{
+        font-size: 40px;
+    }
+    #projects-section .git-img {
+        width: 38px;
+    }
+    #projects-section .git-section a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #projects-section .git-section {
+        width: 46%;
+    }
+    #projects-section .youtube-img {
+        height: 250px;
+        width: 400px;
+    }
+    #projects-section .project-title {
+        padding: 10px 0 10px 0;
+        font-size: 30px!important;
+
+    }
+    #projects-section .play-btn {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* modal*/
+#projects-section .modal {
+    left: 50%;
+    top: 50%;
+    padding-top: 120px;
+    transform: translate(-50%, -50%);
+}
+#projects-section .modal-content {
+    background: none;
+    border: none;
+    width: 100%;
+}
+#projects-section .modal .close {
+    background: none;
+    border: none;
+    color: #FFFAFA;
+    text-align: right;
+}
+#projects-section .modal .close:focus{
+    outline: 0;
+    border: 0;
+} 
+#projects-section #youtube-modal {
+    background: rgba(0, 0, 0, 0.7);
+}
+#projects-section .videowrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+#projects-section .videowrapper iframe {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+@media(min-width: 576px) {
+    #projects-section .modal-dialog {
+        max-width:60%;
+        min-width:576px;
+    }
+    #projects-section .modal {
+        padding-top: 3%;
+    }
+}

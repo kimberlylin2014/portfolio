@@ -1,0 +1,10 @@
+/* footer */
+#footer {
+    position: relative;
+    background-color: #222831;
+    height: 100px;
+    color: #FFFAFA;
+}
+#footer a {
+    color: #6886c5;
+}

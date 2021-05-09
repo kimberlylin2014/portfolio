@@ -1,0 +1,87 @@
+.TopFold {
+
+    background-image: url('../../images/study2.jpg');
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -2;
+    position: relative;
+    min-height: 600px;
+    max-height: 700px;
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(6, 5, 5, 0.1);
+        z-index: -1;
+    }
+
+    .subtitle{
+        z-index: 2;
+        color: #323232;
+        font-family: 'Amatic SC', cursive;
+        animation: animated-text 2s steps(12,end) 1s 1 normal both,
+        animated-cursor 800ms steps(29,end) infinite;
+        border-right: solid 3px rgba(38, 38, 38, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 50px;
+    }
+
+    .kim {
+        color: #323232;
+    }
+
+    .frontend {
+        color: #ffebd9;
+    }
+
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 310px;}
+    }
+
+    @keyframes animated-cursor{
+        from{border-right-color: rgba(42, 45, 42, 0.75);}
+        to{border-right-color: transparent;}
+    }
+
+    @media screen and (min-width: 768px) {
+        .kim {
+            color: #323232;
+            margin-right: 5%;
+        }
+        .subtitle{
+            margin-right: 2%;
+            margin-bottom: 1%;
+        }
+
+        @keyframes animated-text{
+            from{width: 0;}
+            to{width: 280px;}
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-position: right 0px bottom -50px ;
+        height: 90vh;
+        .subtitle{
+            margin-bottom: 5%;
+        }
+    }
+    @media screen and (min-width: 1500px) {
+        height: 78vh;
+        background-position: right 0px bottom -150px ;
+        .subtitle{
+            margin-bottom: 3%;
+        }
+    }
+}
+
+
+
